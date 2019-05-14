@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head><meta charset="utf-8">
+<base href="/">
+<title>Упрощенный Markdown-редактор</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/main.min.css"> 
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light"><a class="navbar-brand" href="/">Упрощенный Markdown-редактор</a></nav>
+    <main class="mt-4 container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <form id="form">
+            <div class="form-group">
+              <textarea class="form-control" id="text-markdown" name="text-markdown" rows="20" required></textarea>
+            </div>
+            <button class="btn btn-primary btn-block">Преобразовать в html</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="b-result border p-3" id="result"></div>
+        </div>
+      </div>
+    </main>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+include blocks/mixins.pug
+doctype html
+html(lang="ru")
+	head
+		include blocks/head.pug
+	body
+		include blocks/header.pug
+
+		main.mt-4.container-fluid
+			.row
+				.col-12.col-md-6
+					form#form
+						.form-group
+							textarea.form-control#text-markdown(name="text-markdown" rows="20" required)
+						button.btn.btn-primary.btn-block Преобразовать в html
+				.col-12.col-md-6
+					.b-result.border.p-3#result
+
+		include blocks/footer.pug
+
+
